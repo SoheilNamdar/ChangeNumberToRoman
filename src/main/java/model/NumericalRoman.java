@@ -9,8 +9,10 @@ public class NumericalRoman {
             st += "V";
             number -= 5;
         }
-        /*if(number == 7) return "VII";
-        if(number == 8) return "VIII";*/
+
+        if(number == 11) return "XI";
+        if(number == 12) return "XII";
+        if(number == 13) return  "XIII";
 
         for(int i=0 ; i < number ; i++) {
             st += "I";

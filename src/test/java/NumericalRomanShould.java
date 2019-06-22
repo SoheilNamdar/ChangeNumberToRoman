@@ -42,4 +42,19 @@ public class NumericalRomanShould {
     public void conveert_8_to_VIII() {
         Assert.assertEquals("VIII", nr.change(8));
     }
+
+    @Test
+    public void conver_11_to_XI() {
+        Assert.assertEquals("XI", nr.change(11));
+    }
+
+    @Test
+    public void conver_12_to_XII() {
+        Assert.assertEquals("XII", nr.change(12));
+    }
+
+    @Test
+    public void convert_13_to_XIII() {
+        Assert.assertEquals("XIII", nr.change(13));
+    }
 }
