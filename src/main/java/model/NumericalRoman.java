@@ -2,9 +2,10 @@ package model;
 
 public class NumericalRoman {
     public String change(int number) {
-        if(number == 1) return "I";
-        else
-        if(number == 2) return "II";
-        else return "III";
+        String st = "";
+        for(int i=0 ; i < number ; i++) {
+            st += "I";
+        }
+        return st;
     }
 }
