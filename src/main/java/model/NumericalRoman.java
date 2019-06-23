@@ -1,10 +1,26 @@
 package model;
 
+import java.util.Collections;
+import java.util.Map;
+import java.util.TreeMap;
+
 public class NumericalRoman {
     public String change(int number) {
-        if(number == 1) return "I";
-        else
-        if(number == 2) return "II";
-        else return "III";
+
+        String st = "";
+
+        Map<Integer, String> map = new TreeMap<>(Collections.reverseOrder());
+        map.put(10, "X");
+        map.put(1, "I");
+        map.put(5, "V");
+
+        for (Map.Entry<Integer, String> pair : map.entrySet()) {
+            while (number >= pair.getKey()){
+                st += pair.getValue();
+                number -= pair.getKey();
+            }
+        }
+
+        return st;
     }
 }

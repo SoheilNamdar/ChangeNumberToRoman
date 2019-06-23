@@ -27,4 +27,54 @@ public class NumericalRomanShould {
     public void convert_3_to_III() {
         Assert.assertEquals("III", nr.change(3));
     }
+
+    @Test
+    public void convert_6_to_VI() {
+        Assert.assertEquals("VI", nr.change(6));
+    }
+
+    @Test
+    public void convert_7_to_VII() {
+        Assert.assertEquals("VII", nr.change(7));
+    }
+
+    @Test
+    public void conveert_8_to_VIII() {
+        Assert.assertEquals("VIII", nr.change(8));
+    }
+
+    @Test
+    public void conver_11_to_XI() {
+        Assert.assertEquals("XI", nr.change(11));
+    }
+
+    @Test
+    public void conver_12_to_XII() {
+        Assert.assertEquals("XII", nr.change(12));
+    }
+
+    @Test
+    public void convert_13_to_XIII() {
+        Assert.assertEquals("XIII", nr.change(13));
+    }
+
+    @Test
+    public void convert_5_to_V() {
+        Assert.assertEquals("V", nr.change(5));
+    }
+
+    @Test
+    public void convert_10_to_X() {
+        Assert.assertEquals("X", nr.change(10));
+    }
+
+    @Test
+    public void convert_23_to_XXIII() {
+        Assert.assertEquals("XXIII", nr.change(23));
+    }
+
+    @Test
+    public void convert_38_to_XXXVIII() {
+        Assert.assertEquals("XXXVIII", nr.change(38));
+    }
 }
